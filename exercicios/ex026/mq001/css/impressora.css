@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* estilos para imprressoras */
+
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+menu {
+    display: none;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+article::after {
+    content: 'esse artigo foi impresso por mim que estou aprendendo html';
+}
+
+article {
+    width: 100%;
+}
