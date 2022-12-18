@@ -1,3 +1,55 @@
 @charset "UTF-8";
 
-@media print;
+/* Print */
+@media print {
+ body {
+    background-image: url(../imagens/_back-print.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    color: black;
+ }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    body {
+        background-image: url(../imagens/_back-tablet.jpg);
+    }
+    
+    .phone { display: none;}
+    .tablet {display: block;}
+    .tv {display: none;}
+    .print {display: none;}
+    .pc {display: none;}   
+ }
+  
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    body {
+        background-image: url(../imagens/_back-pc.jpg);
+    }
+    .phone { display: none;}
+    .tablet {display: none;}
+    .tv {display: none;}
+    .print {display: none;}
+    .pc {display: block;}   
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/_back-tv.jpg);
+    }
+    .phone { display: none;}
+    .tablet {display: none;}
+    .tv {display: block;}
+    .print {display: none;}
+    .pc {display: none;}   
+}
+  
